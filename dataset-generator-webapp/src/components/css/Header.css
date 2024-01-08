@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+/* Header.css */
+.header {
+    position: relative;
+    width: 100%; /* Using percentage for full width */
+    height: min-content;
+    z-index: 999;
+    top: 0; /* Ensuring the header stays at the top */
+}
+
+.bg-dark {
+    background-color: #092d52 !important; /* Example background color */
+    box-shadow: 0 4px 8px 0 #092d52;
+}
+
+.text-wrapper {
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Aligns items vertically in the center */
+    gap: 20px; /* Adds space between items */
+    padding: 10px;
+    font-family: 'Press Start 2P';
+}
+
+.vert-separator {
+    height: 40px; /* Adjust the height as needed */
+    width: 2px; /* Thin vertical line */
+    background-color: #a1c7ec; /* White color for the separator */
+}
+
+.name {
+    margin: 0; /* Removes default margins */
+    font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+
+/* Adjustments for Nav items */
+.text-light {
+    color: #fff !important; /* Ensures text is light colored */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .name, .occupation {
+        font-size: 0.8rem; /* Smaller font size on smaller screens */
+    }
+
+    .nav-link {
+        padding: 0.5rem 0.5rem; /* Adjust padding for smaller screens */
+    }
+
+    .name-occupation-wrapper {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: start; /* Align items to the start */
+    }
+
+    .vert-separator {
+        height: 1px; /* Change to horizontal separator */
+        width: 50%; /* Width for horizontal separator */
+        margin: 5px 0; /* Adjusted margin for horizontal layout */
+    }
+}
+
